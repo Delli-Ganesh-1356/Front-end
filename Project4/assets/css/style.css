@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+:root {
+    /* Primary Color */
+    --primary-color: #048E7B;
+  
+    --background-color : #023931 ;
+  
+    /* Background */
+    --white-color: #ffffff; 
+  
+    /* Accent Gray */
+    --heading-text: #000;
+  
+    /* Text and Secondary Elements */
+    --text-color: #333;
+  
+    /* Divider Lines */
+    --green-color:#3cb815;
+    --light-green-color:#c0eb7b;
+    --orange-color: #ff7e00;
+    --light-orange-color:#f75f1d;
+    --text-color: #1a2428;
+    --bg-color: #fff;
+    --color1: #fef4ea;
+    --color2: #e9f4e3;
+    --color3: #faeaea;
+    --color4: #eeeef9;
+    --color5: #f7d7e9;
+    --color6: #d7f2f7;
+}
+#body{
+    width: 100%;
+}
+#navbar{
+   position: sticky;
+   top: 0;
+   left: 0;
+   z-index: 100;
+   width: 100%;
+   /* height: 90px; */
+   padding: .5rem 5rem;
+   box-shadow: 5px 5px 20px rgba(0,0,0,0.7);
+   background: black;
+}
+#navbar .navbar-brand{
+    font-size: 30px;
+    font-weight: 800;
+}
+#navbarSupportedContent a{
+    background: black;
+    color: #fff;
+    width: 100%;
+    font-size: 20px;
+    padding: 20px;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent{
+    background: black;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid yellow;
+    transition: 0.2s all linear;
+}
+#navbar .btn{
+    background: yellow;
+    color: black;
+    margin-left: 20px;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Home */
+.home{
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.6)),url(home-3.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    width: 100%;
+}
+.home h1{
+    font-size: 90px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-family: 'Lato',sans-serif;
+}
+.home p{
+    font-size:45px;
+    color: #fff;
+    margin-top: 10px;
+}
+.about{
+    background: linear-gradient(to right, rgba(255, 255, 95),white);
+    overflow-y: hidden;
+}
+.about h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+}
+.about img{
+    height: 500px;
+    width: 700px;
+}
+.about p{
+  font-size: 18px;
+  font-weight: 500;
+}
+/* Houses */
+#houses{
+    background: #e5e5e5;
+}
+#houses h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#houses img{
+    height: 350px;
+    width: 320px;
+    margin-top: 10px;
+}
+#houses .card{
+    background: var(--color1);
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    box-shadow: 1px 2px 11px 10px rgb(14 55 54 / 15%);
+}
+#houses .card h5{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+#houses .card .btn{
+    background: yellow;
+    color: black;
+    border-radius: 5rem;
+    border: none;
+}
+#houses .card .btn:hover{
+   color: yellow;
+   background: black;
+   transition: 0.2s all linear;
+}
+#houses .card:hover{
+    bottom: 20px;
+}
+#customers{
+  background: var(--color4);
+}
+#customers h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#customers img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+#customers .card{
+    background: var(--color1);
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    box-shadow: 1px 2px 11px 10px rgb(14 55 54 / 15%);
+}
+#customers .card h5{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+#customers .card p{
+    font-weight: 500;
+}
+#customers .card .stars{
+    font-size: 25px;
+    text-align: center;
+}
+#customers .card:hover{
+    top: 30px;
+}
+#contact{
+    background: var(--color3);
+}
+#contact h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#contact img{
+    border: 5px solid black;
+    height: 420px;
+    margin-top: 30px;
+    box-shadow: 1px 2px 10px 15px rgba(2, 7, 7, 0.5);
+}
+#contact form{
+    user-select: none;
+    background: black;
+    margin-top: 30px;
+    padding: 20px;
+}
+#contact form h4{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+#contact form label{
+    font-size: 20px;
+    color: white;
+}
+#contact form .btn{
+    background: yellow;
+    color: black;
+    width: 100%;
+    border-radius: 5rem;
+    margin-top: 20px;
+}
+#contact form input{
+    margin: 10px;
+}
+#contact form .btn:hover{
+    background: var(--green-color);
+    color:white;
+}
+footer{
+    width: 100%;
+    padding: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 21px;
+}
+footer p{
+    margin-top: 20px;
+}
+@media screen and (max-width:430px){
+    body{
+        overflow-x: hidden;
+    }
+    #navbar{
+        width: 100%;
+        position: sticky; 
+        top: 0;
+        left: 0;
+        z-index: 100;       
+        padding: 0;
+        margin: 0;
+        height: 50px;
+    }
+    #navbar .navbar-brand{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    #navbarSupportedContent a{
+        background: black;
+        color: #fff;
+        width: 100%;
+        font-size: 15px;
+        padding: 15px;
+        border-bottom: 2px solid transparent;
+    }
+    #navbar span{
+        font-size: 15px;
+        outline: none;
+        color: #fff;
+    }
+    #navbar .btn{
+        background: yellow;
+        color: black;
+        font-size: 10px;
+        height: 30px;
+        width: 50px;
+        margin-left: 10px;
+        align-items: center;
+    }
+    .about h1{
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .home{
+        background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.6)),url(home-3.jpg);
+        background-size: cover;
+        background-position: center;
+        flex-direction: column;
+        width: 100%;
+        height: 280px;
+    }
+    .home h1{
+        font-size: 30px;
+        color: #fff;
+        letter-spacing: 2px;
+        font-family: 'Lato',sans-serif;
+    }
+    .home p{
+        font-size:15px;
+        color: #fff;
+        margin-top: 5px;
+    }
+    .about{
+        background: linear-gradient(to right, rgba(255, 255, 95),white);
+        overflow-y: hidden;
+    }
+    .about h1{
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .about img{
+        height: 300px;
+        width: 700px;
+    }
+    .about p{
+      font-size: 10px;
+      font-weight: 500;
+    }
+    #houses h1{
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+    #houses img{
+        height: 200px;
+        width: 240px;
+        margin-top: 10px;
+    }
+    #houses .card{
+        background: var(--color1);
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        box-shadow: 1px 2px 11px 10px rgb(14 55 54 / 15%);
+       
+    }
+    #houses .card h5{
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    #houses .card .btn{
+        background: yellow;
+        color: black;
+        height: 20px;
+        font-size: 10px;
+        border-radius: 5rem;
+        border: none;
+        justify-content: center;
+    }
+    #houses .card .btn:hover{
+       color: yellow;
+       background: black;
+       transition: 0.2s all linear;
+    }
+    #houses .card:hover{
+        bottom: 20px;
+    }
+    #customers h1{
+        font-size: 25px;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+    #customers img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+    #customers .card{
+        background: var(--color1);
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        box-shadow: 1px 2px 11px 10px rgb(14 55 54 / 15%);
+        height: 300px;
+    }
+    #customers .card h5{
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    #customers .card p{
+        font-size: 10px;
+        font-weight: 500;
+    }
+    #customers .card .stars{
+        font-size: 10px;
+        text-align: center;
+    }
+    #customers .card:hover{
+        top: 30px;
+    }
+    #contact h1{
+        font-size: 25px;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+    #contact img{
+        border: 5px solid black;
+        height: 200px;
+        width: 300px;
+        margin-top: 30px;
+        box-shadow: 1px 2px 10px 7px rgba(2, 7, 7, 0.5);
+    }
+    #contact form{
+        user-select: none;
+        background: black;
+        margin-top: 30px;
+        padding: 10px;
+        width: 300px;
+    }
+    #contact form h4{
+        color: white;
+        text-align: center;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+    #contact form label{
+        font-size: 10px;
+        color: white;
+    }
+    #contact form .btn{
+        background: yellow;
+        color: black;
+        width: 100%;
+        border-radius: 5rem;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    #contact form input{
+        margin: 10px;
+        width: 200px;
+        font-size: 10px;
+    }
+    #contact form textarea{
+        font-size: 10px;
+        margin: 5px;
+    }
+    #contact form .btn:hover{
+        background: var(--green-color);
+        color:white;
+    }
+    footer{
+        width: 100%;
+        padding: auto;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 10px;
+    }
+    footer p{
+        margin-top: 20px;
+    }
+}
